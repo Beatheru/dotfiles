@@ -1,0 +1,84 @@
+# CLI
+btop
+fastfetch
+eza
+bat
+fzf
+ripgrep
+zoxide
+wget
+curl
+fd
+rsync
+neovim
+nano
+pacman-contrib
+less
+
+# Apps
+google-chrome
+zen-browser-bin
+discord
+spotify-launcher
+docker
+yaak-bin
+wireguard-tools
+starship
+ghostty
+localsend-bin
+obsidian
+visual-studio-code-bin
+
+# Niri
+niri
+xdg-desktop-portal-gtk
+xdg-desktop-portal-gnome
+xwayland-satellite
+polkit-gnome
+networkmanager
+iwd
+
+# Noctalia
+noctalia-shell
+cliphist
+wlsunset
+xdg-desktop-portal
+python3
+matugen
+adw-gtk-theme
+nwg-look
+
+# Fonts
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+ttf-jetbrains-mono-nerd
+
+# Icons
+kora-icon-theme
+
+# Firewall
+ufw
+ufw-docker
+
+# Limine
+limine
+limine-dracut-support
+limine-snapper-sync
+snapper
+snap-pac
+btrfs-assistant
+plymouth
+
+# Display manager
+sddm
+qt6-declarative
+qt6-5compat
+qt6-svg
+qt6-multimedia
+qt6-multimedia-ffmpeg
+gst-plugins-base
+gst-plugins-good
+gst-plugins-bad
+gst-plugins-ugly

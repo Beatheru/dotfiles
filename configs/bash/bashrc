@@ -1,0 +1,25 @@
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+export EDITOR="nvim"
+export VISUAL="nvim"
+export SUDO_EDITOR="nvim"
+export MANPAGER="nvim +Man!."
+
+# Init
+if command -v starship &> /dev/null; then
+  eval "$(starship init bash)"
+fi
+
+if command -v zoxide &> /dev/null; then
+  eval "$(zoxide init --cmd cd bash)"
+fi
+
+if command -v fzf &> /dev/null; then
+  eval "$(fzf --bash)"
+fi
+
+# Aliases
+if command -v eza &> /dev/null; then
+  alias ls='eza -lh --group-directories-first --icons=auto'
+fi
