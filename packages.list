@@ -32,13 +32,11 @@ niri
 xdg-desktop-portal-gtk
 xdg-desktop-portal-gnome
 xwayland-satellite
-udiskie
-polkit-kde-agent
+polkit-gnome
 
 # Noctalia
 noctalia-shell
 cliphist
-cava
 wlsunset
 xdg-desktop-portal
 evolution-data-server
