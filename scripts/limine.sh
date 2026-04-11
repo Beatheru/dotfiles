@@ -6,6 +6,7 @@ if [[ "$OS_ID" != "cachyos" ]]; then
   paru -S --noconfirm --needed limine limine-dracut-support limine-snapper-sync snapper btrfs-assistant
   echo "Copying limine-entry-tool.conf to /etc/default/limine"
   sudo cp /etc/limine-entry-tool.conf /etc/default/limine
+  sudo cp $SRC_DIR/limine.conf /boot
   echo "Running limine-install"
   sudo limine-install
   echo "Running limine-update"
