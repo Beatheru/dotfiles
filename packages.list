@@ -46,8 +46,8 @@ nwg-look
 qt6ct
 
 # Fonts
-noto-fonts
-noto-fonts-cjk
-noto-fonts-emoji
-noto-fonts-extra
+# noto-fonts
+# noto-fonts-cjk
+# noto-fonts-emoji
+# noto-fonts-extra
 ttf-jetbrains-mono-nerd
