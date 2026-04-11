@@ -9,14 +9,14 @@ Session=niri
 EOF
 else 
   # Install Ly display manager
-  echo "Installing Ly"
+  log INFO "Installing Ly"
   paru -S --noconfirm --needed ly
-  echo "Disabling getty service"
+  log INFO "Disabling getty service"
   sudo systemctl disable getty@tty1.service
-  echo "Enabling ly service"
+  log INFO "Enabling ly service"
   sudo systemctl enable ly@tty1.service
 
-  echo "Configuring Ly autologin"
+  log INFO "Configuring Ly autologin"
   cat <<EOF | sudo tee /etc/ly/config.ini
 auto_login_session = niri
 auto_login_user = $USER

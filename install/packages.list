@@ -44,9 +44,9 @@ matugen
 nwg-look
 
 # Fonts
-# noto-fonts
-# noto-fonts-cjk
-# noto-fonts-emoji
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
 # noto-fonts-extra
 ttf-jetbrains-mono-nerd
 
