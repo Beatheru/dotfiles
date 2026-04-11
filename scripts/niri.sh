@@ -8,7 +8,6 @@ if [[ -n "$(lspci | grep -iE 'vga|3d|display' | grep -i 'NVIDIA')" ]]; then
 fi
 
 # Set gtk settings
-echo "Setting gtk-theme to 'adw-gtk3'"
-gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3'
 echo "Setting color-scheme to 'prefer-dark'"
+gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3'
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'

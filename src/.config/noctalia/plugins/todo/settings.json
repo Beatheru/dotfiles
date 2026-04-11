@@ -1,0 +1,268 @@
+{
+  "todos": [
+    {
+      "id": 1775781757192,
+      "text": "fastfetch conifg",
+      "completed": false,
+      "createdAt": "2026-04-10T00:42:37.192Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1775781125342,
+      "text": "use sddm",
+      "completed": false,
+      "createdAt": "2026-04-10T00:32:05.342Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770182242320,
+      "text": "gtk and qt theme",
+      "completed": false,
+      "createdAt": "2026-02-04T05:17:22.320Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770182238396,
+      "text": "icons",
+      "completed": false,
+      "createdAt": "2026-02-04T05:17:18.396Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770182156441,
+      "text": "default apps",
+      "completed": false,
+      "createdAt": "2026-02-04T05:15:56.441Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770182070166,
+      "text": "omarchy script compare",
+      "completed": false,
+      "createdAt": "2026-02-04T05:14:30.166Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770182059221,
+      "text": "look at eos and cachy tools",
+      "completed": false,
+      "createdAt": "2026-02-04T05:14:19.221Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770182055500,
+      "text": "garbage collect cache",
+      "completed": false,
+      "createdAt": "2026-02-04T05:14:15.500Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770182027517,
+      "text": "postinstall - nvidia drivers",
+      "completed": false,
+      "createdAt": "2026-02-04T05:13:47.517Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770182016746,
+      "text": "package cull",
+      "completed": false,
+      "createdAt": "2026-02-04T05:13:36.746Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770181902143,
+      "text": "remove archinstall limine boot",
+      "completed": false,
+      "createdAt": "2026-02-04T05:11:42.143Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770181882200,
+      "text": "ghostty cursor tail",
+      "completed": false,
+      "createdAt": "2026-02-04T05:11:22.200Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770181878550,
+      "text": "ghostty config",
+      "completed": false,
+      "createdAt": "2026-02-04T05:11:18.550Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770181871982,
+      "text": "niri config",
+      "completed": false,
+      "createdAt": "2026-02-04T05:11:11.982Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770181863229,
+      "text": "noctalia config",
+      "completed": false,
+      "createdAt": "2026-02-04T05:11:03.229Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770181857072,
+      "text": "plymouth",
+      "completed": false,
+      "createdAt": "2026-02-04T05:10:57.072Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770181818817,
+      "text": "check limine config",
+      "completed": false,
+      "createdAt": "2026-02-04T05:10:18.817Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770181816999,
+      "text": "check snapper config",
+      "completed": false,
+      "createdAt": "2026-02-04T05:10:16.999Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770181766452,
+      "text": "postinstall - optional reflector",
+      "completed": false,
+      "createdAt": "2026-02-04T05:09:26.452Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770181759542,
+      "text": "postinstall - pretty logs",
+      "completed": false,
+      "createdAt": "2026-02-04T05:09:19.542Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770181750034,
+      "text": "postinstall - remove systemd-network",
+      "completed": false,
+      "createdAt": "2026-02-04T05:09:10.034Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770181731617,
+      "text": "postinstall - detect services before enabling",
+      "completed": false,
+      "createdAt": "2026-02-04T05:08:51.617Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1770181721692,
+      "text": "postinstall - helper functions",
+      "completed": false,
+      "createdAt": "2026-02-04T05:08:41.692Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    }
+  ],
+  "pages": [
+    {
+      "id": 0,
+      "name": "General"
+    }
+  ],
+  "current_page_id": 0,
+  "count": 23,
+  "completedCount": 0,
+  "showCompleted": true,
+  "showBackground": true,
+  "isExpanded": false,
+  "useCustomColors": false,
+  "priorityColors": {
+    "high": {
+      "r": 0.9686274528503418,
+      "g": 0.4627451002597809,
+      "b": 0.5568627715110779,
+      "a": 1,
+      "hsvHue": 0.968999981880188,
+      "hsvSaturation": 0.5222705602645874,
+      "hsvValue": 0.9686274528503418,
+      "hslHue": 0.968999981880188,
+      "hslSaturation": 0.8896620273590088,
+      "hslLightness": 0.7156938910484314,
+      "valid": true
+    },
+    "medium": {
+      "r": 0.47843137383461,
+      "g": 0.6352941393852234,
+      "b": 0.9686274528503418,
+      "a": 1,
+      "hsvHue": 0.6133333444595337,
+      "hsvSaturation": 0.5060654878616333,
+      "hsvValue": 0.9686274528503418,
+      "hslHue": 0.6133333444595337,
+      "hslSaturation": 0.886518657207489,
+      "hslLightness": 0.723537027835846,
+      "valid": true
+    },
+    "low": {
+      "r": 0.6039215922355652,
+      "g": 0.6470588445663452,
+      "b": 0.8078431487083435,
+      "a": 1,
+      "hsvHue": 0.6314166784286499,
+      "hsvSaturation": 0.2524299919605255,
+      "hsvValue": 0.8078431487083435,
+      "hslHue": 0.6314166784286499,
+      "hslSaturation": 0.3466697037220001,
+      "hslLightness": 0.7058823704719543,
+      "valid": true
+    }
+  },
+  "exportPath": "~/Documents",
+  "exportFormat": "markdown",
+  "exportEmptySections": false
+}

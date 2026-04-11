@@ -39,11 +39,9 @@ noctalia-shell
 cliphist
 wlsunset
 xdg-desktop-portal
-evolution-data-server
+python3
 matugen
-adw-gtk-theme
 nwg-look
-qt6ct
 
 # Fonts
 # noto-fonts
