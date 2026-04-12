@@ -52,3 +52,7 @@ ttf-jetbrains-mono-nerd
 
 # Icons
 kora-icon-theme
+
+# Firewall
+ufw
+ufw-docker
