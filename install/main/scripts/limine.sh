@@ -30,7 +30,7 @@ if [[ "$OS_ID" != "cachyos" ]]; then
   ## Change max snapshots to 10
   sudo sed -i 's/^NUMBER_LIMIT="50"/NUMBER_LIMIT="10"/' /etc/snapper/configs/{root,home}
   sudo sed -i 's/^NUMBER_LIMIT_IMPORTANT="10"/NUMBER_LIMIT_IMPORTANT="10"/' /etc/snapper/configs/{root,home}
-  log INFO "MAX_SNAPSHOT_ENTRIES=10" | sudo tee -a /etc/default/limine
+  echo "MAX_SNAPSHOT_ENTRIES=10" | sudo tee -a /etc/default/limine
   ## Change max space usage to be 30%
   sudo sed -i 's/^SPACE_LIMIT="0.5"/SPACE_LIMIT="0.3"/' /etc/snapper/configs/{root,home}
   ## Enable UKI and fallback

@@ -3,7 +3,7 @@
 # Fix Niri high VRAM usage with NVIDIA. See https://yalter.github.io/niri/Nvidia.html
 if [[ -n "$(lspci | grep -iE 'vga|3d|display' | grep -i 'NVIDIA')" ]]; then
   log INFO "Fixing Niri VRAM issues with Nvidia"
-  mkdir -p /etc/nvidia/nvidia-application-profiles-rc.d
+  sudo mkdir -p /etc/nvidia/nvidia-application-profiles-rc.d
   sudo cp -f $INSTALL_CONFIGS/niri/50-limit-free-buffer-pool-in-wayland-compositors.json /etc/nvidia/nvidia-application-profiles-rc.d/
 fi
 
