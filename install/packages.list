@@ -57,3 +57,11 @@ kora-icon-theme
 # Firewall
 ufw
 ufw-docker
+
+# Limine
+limine
+limine-dracut-support
+limine-snapper-sync
+snapper
+btrfs-assistant
+plymouth
