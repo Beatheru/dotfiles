@@ -43,6 +43,6 @@ if [[ "$OS_ID" != "cachyos" ]]; then
   # Remove other archinstall limine entries
   while IFS= read -r bootnum; do
     sudo efibootmgr -b "$bootnum" -B >/dev/null 2>&1
-  done < <(efibootmgr | grep -E "^Boot[0-9]{4}\*? Arch Linux Limine" | sed 's/^Boot\([0-9]\{4\}\).*/\1/')
+  done < <(efibootmgr | grep -E "^Boot[0-9A-F]{4}\*? Arch Linux Limine" | sed 's/^Boot\([0-9A-F]\{4\}\).*/\1/')
   rm -rf /boot/EFI/arch-limine 2>/dev/null || true
 fi
