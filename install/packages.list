@@ -13,6 +13,7 @@ rsync
 neovim
 nano
 pacman-contrib
+less
 
 # Apps
 google-chrome
