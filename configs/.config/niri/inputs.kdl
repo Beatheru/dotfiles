@@ -10,11 +10,12 @@ input {
         // off
         tap
         accel-profile "flat"
+        scroll-factor 0.6
     }
 
     mouse {
-        // off
         accel-profile "flat"
+        scroll-factor 0.6
     }
 
     // Uncomment this to make the mouse warp to the center of newly focused windows.
