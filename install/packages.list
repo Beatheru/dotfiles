@@ -65,6 +65,7 @@ limine
 limine-dracut-support
 limine-snapper-sync
 snapper
+snap-pac
 btrfs-assistant
 plymouth
 

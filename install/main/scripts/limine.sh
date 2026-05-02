@@ -29,12 +29,10 @@ if [[ "$OS_ID" != "cachyos" ]]; then
   ## Disable hourly snapshots
   sudo sed -i 's/^TIMELINE_CREATE="yes"/TIMELINE_CREATE="no"/' /etc/snapper/configs/{root,home}
   ## Change max snapshots to 10
-  sudo sed -i 's/^NUMBER_LIMIT="50"/NUMBER_LIMIT="10"/' /etc/snapper/configs/{root,home}
-  sudo sed -i 's/^NUMBER_LIMIT_IMPORTANT="10"/NUMBER_LIMIT_IMPORTANT="10"/' /etc/snapper/configs/{root,home}
+  sudo sed -i 's/^NUMBER_LIMIT="50"/NUMBER_LIMIT="5"/' /etc/snapper/configs/{root,home}
+  sudo sed -i 's/^NUMBER_LIMIT_IMPORTANT="5"/NUMBER_LIMIT_IMPORTANT="10"/' /etc/snapper/configs/{root,home}
   ## Change max space usage to be 30%
   sudo sed -i 's/^SPACE_LIMIT="0.5"/SPACE_LIMIT="0.3"/' /etc/snapper/configs/{root,home}
-  ## Enable UKI and fallback
-  sudo sed -i '/^ENABLE_UKI=/d; /^ENABLE_LIMINE_FALLBACK=/d' /etc/default/limine
 
   log INFO "Enabling limine-snapper-sync service"
   sudo systemctl enable limine-snapper-sync.service
