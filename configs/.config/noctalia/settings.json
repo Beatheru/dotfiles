@@ -218,6 +218,7 @@
                 {
                     "colorizeDistroLogo": false,
                     "colorizeSystemIcon": "primary",
+                    "colorizeSystemText": "none",
                     "customIconPath": "",
                     "enableColorization": false,
                     "icon": "noctalia",
@@ -594,6 +595,13 @@
                 "command": "",
                 "countdownEnabled": true,
                 "enabled": true,
+                "keybind": "7"
+            },
+            {
+                "action": "userspaceReboot",
+                "command": "",
+                "countdownEnabled": true,
+                "enabled": false,
                 "keybind": ""
             }
         ],
