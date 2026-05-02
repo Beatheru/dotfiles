@@ -67,3 +67,15 @@ limine-snapper-sync
 snapper
 btrfs-assistant
 plymouth
+
+# Display manager
+sddm
+qt6-declarative
+qt6-5compat
+qt6-svg
+qt6-multimedia
+qt6-multimedia-ffmpeg
+gst-plugins-base
+gst-plugins-good
+gst-plugins-bad
+gst-plugins-ugly
