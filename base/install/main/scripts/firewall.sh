@@ -1,7 +1,5 @@
 # Check if ufw is already setup
 if ! systemctl is-active --quiet ufw; then
-  log INFO "Setting up UFW firewall"
-  
   # Allow nothing in, allow everything out
   sudo ufw default deny incoming
   sudo ufw default allow outgoing

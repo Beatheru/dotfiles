@@ -1,17 +1,12 @@
-log INFO "Copying limine configs"
-sudo cp $INSTALL_CONFIGS/limine/default.conf /etc/default/limine
-sudo cp $INSTALL_CONFIGS/limine/limine.conf /boot
-log INFO "Adding kernel params"
+sudo cp "$INSTALL_CONFIGS/limine/default.conf" /etc/default/limine
+sudo cp "$INSTALL_CONFIGS/limine/limine.conf" /boot
 KERNEL_PARAMS=$(cat /etc/kernel/cmdline)
 sudo sed -i -E "s|^KERNEL_CMDLINE\[default\]\+=\"\"|KERNEL_CMDLINE[default]+=\"$KERNEL_PARAMS quiet splash\"|" /etc/default/limine
 
-log INFO "Running limine-install"
 sudo limine-install
-log INFO "Running limine-update"
 sudo limine-update
 
 # Setup Snapper with Limine
-log INFO "Creating snapper configs"
 if ! sudo snapper list-configs 2>/dev/null | grep -q "root"; then
   sudo snapper -c root create-config /
 fi
@@ -25,9 +20,9 @@ sudo btrfs quota enable /
 log INFO "Modifying Snapper config"
 ## Disable hourly snapshots
 sudo sed -i 's/^TIMELINE_CREATE="yes"/TIMELINE_CREATE="no"/' /etc/snapper/configs/{root,home}
-## Change max snapshots to 10
+## Change max snapshots to 5
 sudo sed -i 's/^NUMBER_LIMIT="50"/NUMBER_LIMIT="5"/' /etc/snapper/configs/{root,home}
-sudo sed -i 's/^NUMBER_LIMIT_IMPORTANT="5"/NUMBER_LIMIT_IMPORTANT="10"/' /etc/snapper/configs/{root,home}
+sudo sed -i 's/^NUMBER_LIMIT_IMPORTANT="5"/NUMBER_LIMIT_IMPORTANT="5"/' /etc/snapper/configs/{root,home}
 ## Change max space usage to be 30%
 sudo sed -i 's/^SPACE_LIMIT="0.5"/SPACE_LIMIT="0.3"/' /etc/snapper/configs/{root,home}
 
@@ -42,4 +37,7 @@ rm -rf /boot/EFI/arch-limine 2>/dev/null || true
 rm -rf /boot/limine
 
 # Remove mkinitcpio
-paru -Rns $(paru -Qq | grep mkinitcpio)
+mkinitcpio_pkgs=$(paru -Qq | grep mkinitcpio || true)
+if [[ -n "$mkinitcpio_pkgs" ]]; then
+  paru -Rns --noconfirm $mkinitcpio_pkgs
+fi

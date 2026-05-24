@@ -1,0 +1,33 @@
+# Niri
+niri
+xdg-desktop-portal-gtk
+xdg-desktop-portal-gnome
+xwayland-satellite
+polkit-gnome
+networkmanager
+iwd
+
+# Noctalia
+noctalia-shell
+cliphist
+wlsunset
+xdg-desktop-portal
+python3
+matugen
+adw-gtk-theme
+nwg-look
+
+# Icons
+kora-icon-theme
+
+# Display manager
+sddm
+qt6-declarative
+qt6-5compat
+qt6-svg
+qt6-multimedia
+qt6-multimedia-ffmpeg
+gst-plugins-base
+gst-plugins-good
+gst-plugins-bad
+gst-plugins-ugly
