@@ -1,4 +1,5 @@
 source "$INSTALL_SCRIPTS/packages.sh"
+source "$INSTALL_SCRIPTS/configs.sh"
 
 # Run all script files
 for file in "$INSTALL_SCRIPTS/scripts/"*; do

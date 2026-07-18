@@ -1,5 +1,4 @@
-log INFO "Copying configs to .config"
-mkdir -p ~/.config
-cp -R "$INSTALL_CONFIGS/.config/"* ~/.config/
-cp -f "$INSTALL_CONFIGS/bash/bashrc" ~/.bashrc
+log INFO "Symlinking configs with stow"
+stow -d "$INSTALL_CONFIGS" -t ~ --no-folding bash fastfetch ghostty
+
 sudo cp -f "$INSTALL_CONFIGS/pacman/pacman.conf" /etc/pacman.conf
