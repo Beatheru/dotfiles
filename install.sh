@@ -2,7 +2,10 @@
 
 set -euo pipefail
 
-trap 'log ERROR "Script failed at line $LINENO"' ERR
+if [[ $EUID -eq 0 ]]; then
+  echo "Do not run this script as root or with sudo."
+  exit 1
+fi
 
 export INSTALL_HOME="$(cd "$(dirname "$0")" && pwd)"
 export INSTALL_CONFIGS="$INSTALL_HOME/base/configs"

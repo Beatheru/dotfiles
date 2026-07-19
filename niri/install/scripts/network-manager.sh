@@ -6,4 +6,4 @@ cat <<EOF | sudo tee /etc/NetworkManager/conf.d/wifi_backend.conf
 wifi.backend=iwd
 EOF
 
-activate NetworkManager
+sudo systemctl enable --now NetworkManager

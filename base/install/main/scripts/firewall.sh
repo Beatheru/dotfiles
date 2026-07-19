@@ -15,7 +15,7 @@ if ! systemctl is-active --quiet ufw; then
   sudo ufw --force enable
 
   # Enable UFW systemd service to start on boot
-  activate ufw
+  sudo systemctl enable --now ufw
 
   # Turn on Docker protections
   sudo ufw-docker install

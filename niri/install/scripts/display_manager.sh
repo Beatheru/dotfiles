@@ -1,1 +1,1 @@
-activate sddm
+sudo systemctl enable sddm

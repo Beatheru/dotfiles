@@ -1,1 +1,1 @@
-activate bluetooth
+sudo systemctl enable --now bluetooth

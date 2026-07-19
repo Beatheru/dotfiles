@@ -1,1 +1,1 @@
-activate reflector.timer
+sudo systemctl enable --now reflector.timer
