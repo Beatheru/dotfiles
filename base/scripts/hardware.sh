@@ -4,6 +4,6 @@ if has_intel; then
 fi
 
 if has_nvidia; then
-  kernel=$(pacman -Qq linux linux-lts linux-zen linux-hardened 2>/dev/null | head -1)
+  kernel=$(pacman -Qqs '^linux(-zen|-lts|-hardened)?$' | head -1)
   paru -S --noconfirm --needed nvidia-open-dkms "${kernel}-headers" nvidia-utils lib32-nvidia-utils libva-nvidia-driver nvidia-prime nvidia-settings
 fi

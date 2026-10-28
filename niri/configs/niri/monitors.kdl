@@ -34,13 +34,3 @@
   // automatically.
   position x=1280 y=0
 }
-
-output "eDP-1" {
-  mode "1920x1080@143.999"
-  position x=0 y=512
-}
-
-output "DP-4" {
-  mode "1920x1080@143.981"
-  position x=1920 y=0
-}

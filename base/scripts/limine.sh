@@ -1,10 +1,23 @@
 sudo cp "$INSTALL_CONFIGS/limine/default.conf" /etc/default/limine
-sudo cp "$INSTALL_CONFIGS/limine/limine.conf" /boot
 sudo mkdir -p /etc/pacman.d/hooks
 sudo cp "$INSTALL_CONFIGS/limine/99-limine.hook" /etc/pacman.d/hooks
 
 sudo limine-install
 sudo limine-update
+
+# Add styling
+TMPFILE=$(mktemp)
+cat > "$TMPFILE" << 'EOF'
+term_palette: 1e1e2e;f38ba8;a6e3a1;f9e2af;89b4fa;f5c2e7;94e2d5;cdd6f4
+term_palette_bright: 585b70;f38ba8;a6e3a1;f9e2af;89b4fa;f5c2e7;94e2d5;cdd6f4
+term_background: 1e1e2e
+term_foreground: cdd6f4
+term_background_bright: 585b70
+term_foreground_bright: cdd6f4
+
+EOF
+cat /boot/limine.conf >> "$TMPFILE"
+sudo mv "$TMPFILE" /boot/limine.conf
 
 # Setup Snapper with Limine
 if ! sudo snapper list-configs 2>/dev/null | grep -q "root"; then

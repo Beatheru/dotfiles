@@ -8,7 +8,9 @@ networkmanager
 iwd
 
 # Noctalia
-noctalia-git
+noctalia
+adw-gtk-theme
+nwg-look
 
 # Icons
 kora-icon-theme
